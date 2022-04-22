@@ -11,3 +11,9 @@ class NoteViewSet(viewsets.ModelViewSet):
     permission_classes = (
         IsAuthenticatedOrReadOnly,
     )
+    filter_fields = (
+        'author',
+    )
+    search_fields = (
+        'text',
+    )
